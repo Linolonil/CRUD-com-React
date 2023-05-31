@@ -17,7 +17,8 @@ const Table = styled.table`
 
 export const Thead = styled.thead``;
 
-export const Tbody = styled.tbody``;
+export const Tbody = styled.tbody`
+`;
 
 export const Tr = styled.tr``;
 
@@ -74,8 +75,8 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
       <Tbody>
         {users.map((item, i) => (
           <Tr key={i}>
-            <Td width="30%">{item.nome}</Td>
-            <Td width="30%">{item.email}</Td>
+            <Td width="40%">{item.nome}</Td>
+            <Td width="40%">{item.email}</Td>
             <Td width="20%" onlyWeb>
               {item.fone}
             </Td>

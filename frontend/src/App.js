@@ -17,7 +17,9 @@ const Container = styled.div`
   gap: 10px;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  color: darkblue;
+`;
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -41,6 +43,7 @@ function App() {
       <Container>
         <Title>USUÁRIOS</Title>
         <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Title>Banco de Dados</Title>
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
       <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
