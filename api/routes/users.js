@@ -8,6 +8,8 @@ import {
 
 const router = express.Router();
 
+const port = process.env.PORT || 3001;
+
 router.get("/", getUsers);
 
 router.post("/", addUser);
